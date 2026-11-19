@@ -1,0 +1,336 @@
+.env.example
+  s_844bb8b964fcda::t_b4efa73751c1ad 13-16
+  s_844bb8b964fcda::t_f095006e4264bf 20
+  s_844bb8b964fcda::t_f4b55c8b602e12 22-26
+  s_844bb8b964fcda::t_c99e452a2793b2 27-29
+.gitignore
+  s_844bb8b964fcda::t_1782378f953a94 9
+  s_844bb8b964fcda::t_83e328afc2c2d6 10
+  s_844bb8b964fcda::t_979354934417a1 11
+README.md
+  s_844bb8b964fcda::t_d17c9019e05874 1-3,7-24,34-40,57-73,115,123
+  s_844bb8b964fcda::t_bb70efbcae40ac 5
+config/tenant.yaml
+  s_844bb8b964fcda::t_a1e644c732e066 3-4,7-10
+data/db/schema.sql
+  s_844bb8b964fcda::t_86f3c09816da89 1-46
+data/db/seed.sql
+  s_844bb8b964fcda::t_9df618107de101 1-20
+data/policies/device-policy.md
+  s_844bb8b964fcda::t_9f5d92e1d922aa 1-13
+data/policies/it-security-policy.md
+  s_844bb8b964fcda::t_47e34013bdab33 1-13
+data/policies/leave-policy.md
+  s_844bb8b964fcda::t_a6877192664124 1-17
+data/policies/reimbursement-policy.md
+  s_844bb8b964fcda::t_e5c7b425899196 1-13
+data/policies/remote-work-policy.md
+  s_844bb8b964fcda::t_d13e83b7588762 1-13
+docker-compose.yml
+  s_844bb8b964fcda::t_b4efa73751c1ad 10
+eval/questions.yaml
+  s_844bb8b964fcda::t_1db5601b107f7b 1-87
+eval/results.md
+  s_844bb8b964fcda::t_d17c9019e05874 1,5-8,20-22,25-26,30,33-34,38-42,45-46,50,59,62
+mcp_server/server.py
+  s_844bb8b964fcda::t_5918c816ad0125 1-84
+scripts/run_eval.py
+  s_844bb8b964fcda::t_2daaf773e34d8d 1-84,86-141
+  s_844bb8b964fcda::t_d17c9019e05874 85
+scripts/seed_db.py
+  s_844bb8b964fcda::t_7db5bb0d42d1e6 1-22
+src/helpdesk/__main__.py
+  s_844bb8b964fcda::t_1729adf45a7c95 1-3
+src/helpdesk/agent.py
+  s_844bb8b964fcda::t_ad6688a0343e2c 1-3,5-19,21-97,101-108,110-127,162-183,186-193
+  s_844bb8b964fcda::t_ace39c01c4741a 4
+  s_844bb8b964fcda::t_33f3dbfbe6344c 20
+  s_844bb8b964fcda::t_8ade389cd3cc5a 98-100
+  s_844bb8b964fcda::t_d65b90b568669c 109
+  s_844bb8b964fcda::t_0ee64b9613d476 128-161
+  s_844bb8b964fcda::t_a8a746f880087d 184-185
+src/helpdesk/api.py
+  s_844bb8b964fcda::t_17c0b54390a071 1-21
+src/helpdesk/cli.py
+  s_844bb8b964fcda::t_b4276409aca513 1-46
+src/helpdesk/config.py
+  s_844bb8b964fcda::t_f3f95283e503cc 1-80
+src/helpdesk/db.py
+  s_844bb8b964fcda::t_f4dd4919a7ca92 1-26
+src/helpdesk/guardrails/input_guard.py
+  s_844bb8b964fcda::t_a3406c0f391365 1-16,18-55,59-91
+  s_844bb8b964fcda::t_3c0e26717c871e 17
+  s_844bb8b964fcda::t_faf26acf855a73 56-58
+src/helpdesk/guardrails/output_guard.py
+  s_844bb8b964fcda::t_f1262e10cf8651 1-46
+src/helpdesk/guardrails/pii.py
+  s_844bb8b964fcda::t_3bd751c1346d20 1-33
+src/helpdesk/ingest.py
+  s_844bb8b964fcda::t_8f8471b979edf6 1-44
+src/helpdesk/llm.py
+  s_844bb8b964fcda::t_c99e452a2793b2 1-42
+src/helpdesk/retriever.py
+  s_844bb8b964fcda::t_409434e6193940 1-58
+tests/test_agent_smoke.py
+  s_844bb8b964fcda::t_d13731c934c21a 1-67
+  s_844bb8b964fcda::t_7bd42ec555b6b1 68-108
+tests/test_input_guard.py
+  s_844bb8b964fcda::t_7e01cd9f54c772 1-49
+tests/test_mcp_tools.py
+  s_844bb8b964fcda::t_0295c407fe9479 1-74
+tests/test_output_guard.py
+  s_844bb8b964fcda::t_7d68cecea997d7 1-37
+tests/test_pii.py
+  s_844bb8b964fcda::t_d3a6a1e991bc1c 1-33
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "autter_version": "3.9.1",
+  "base_commit_sha": "b920126a9eefdf578fa02e6855f14640ae808198",
+  "branch": "main",
+  "prompts": {
+    "s_844bb8b964fcda": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1b98acd4-c103-497a-9b5d-341516298da8",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "Poushali Bhattacharyya <poushalibhattacharyya02@gmail.com>",
+      "messages_url": "cas:537219b9c91fa84e44b057ab8e951d2c077358b70586a7067d3dc8faa2abcf3f",
+      "total_additions": 1673,
+      "total_deletions": 128,
+      "accepted_lines": 1547,
+      "overriden_lines": 87
+    }
+  },
+  "sessions": {
+    "s_844bb8b964fcda": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1b98acd4-c103-497a-9b5d-341516298da8",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "Poushali Bhattacharyya <poushalibhattacharyya02@gmail.com>",
+      "messages_url": "cas:537219b9c91fa84e44b057ab8e951d2c077358b70586a7067d3dc8faa2abcf3f",
+      "stats": {
+        "total_additions": 1673,
+        "total_deletions": 128,
+        "accepted_lines": 1547,
+        "overriden_lines": 87,
+        "files": {
+          ".env.example": {
+            "total_additions": 12,
+            "total_deletions": 4,
+            "accepted_lines": 13,
+            "overriden_lines": 0
+          },
+          ".gitignore": {
+            "total_additions": 3,
+            "total_deletions": 0,
+            "accepted_lines": 3,
+            "overriden_lines": 0
+          },
+          ".markdown-collab/.mcp-server.json": {
+            "total_additions": 8,
+            "total_deletions": 0,
+            "accepted_lines": 0,
+            "overriden_lines": 0
+          },
+          "README.md": {
+            "total_additions": 126,
+            "total_deletions": 4,
+            "accepted_lines": 48,
+            "overriden_lines": 51
+          },
+          "config/tenant.yaml": {
+            "total_additions": 14,
+            "total_deletions": 4,
+            "accepted_lines": 6,
+            "overriden_lines": 4
+          },
+          "data/db/schema.sql": {
+            "total_additions": 46,
+            "total_deletions": 0,
+            "accepted_lines": 46,
+            "overriden_lines": 0
+          },
+          "data/db/seed.sql": {
+            "total_additions": 20,
+            "total_deletions": 0,
+            "accepted_lines": 20,
+            "overriden_lines": 0
+          },
+          "data/policies/device-policy.md": {
+            "total_additions": 13,
+            "total_deletions": 0,
+            "accepted_lines": 13,
+            "overriden_lines": 0
+          },
+          "data/policies/it-security-policy.md": {
+            "total_additions": 13,
+            "total_deletions": 0,
+            "accepted_lines": 13,
+            "overriden_lines": 0
+          },
+          "data/policies/leave-policy.md": {
+            "total_additions": 17,
+            "total_deletions": 0,
+            "accepted_lines": 17,
+            "overriden_lines": 0
+          },
+          "data/policies/reimbursement-policy.md": {
+            "total_additions": 13,
+            "total_deletions": 0,
+            "accepted_lines": 13,
+            "overriden_lines": 0
+          },
+          "data/policies/remote-work-policy.md": {
+            "total_additions": 13,
+            "total_deletions": 0,
+            "accepted_lines": 13,
+            "overriden_lines": 0
+          },
+          "docker-compose.yml": {
+            "total_additions": 1,
+            "total_deletions": 1,
+            "accepted_lines": 1,
+            "overriden_lines": 0
+          },
+          "eval/questions.yaml": {
+            "total_additions": 87,
+            "total_deletions": 0,
+            "accepted_lines": 87,
+            "overriden_lines": 0
+          },
+          "eval/results.md": {
+            "total_additions": 40,
+            "total_deletions": 99,
+            "accepted_lines": 23,
+            "overriden_lines": 32
+          },
+          "mcp_server/server.py": {
+            "total_additions": 84,
+            "total_deletions": 0,
+            "accepted_lines": 84,
+            "overriden_lines": 0
+          },
+          "scripts/run_eval.py": {
+            "total_additions": 142,
+            "total_deletions": 1,
+            "accepted_lines": 141,
+            "overriden_lines": 0
+          },
+          "scripts/seed_db.py": {
+            "total_additions": 22,
+            "total_deletions": 0,
+            "accepted_lines": 22,
+            "overriden_lines": 0
+          },
+          "src/helpdesk/__main__.py": {
+            "total_additions": 3,
+            "total_deletions": 0,
+            "accepted_lines": 3,
+            "overriden_lines": 0
+          },
+          "src/helpdesk/agent.py": {
+            "total_additions": 202,
+            "total_deletions": 9,
+            "accepted_lines": 193,
+            "overriden_lines": 0
+          },
+          "src/helpdesk/api.py": {
+            "total_additions": 21,
+            "total_deletions": 0,
+            "accepted_lines": 21,
+            "overriden_lines": 0
+          },
+          "src/helpdesk/cli.py": {
+            "total_additions": 46,
+            "total_deletions": 0,
+            "accepted_lines": 46,
+            "overriden_lines": 0
+          },
+          "src/helpdesk/config.py": {
+            "total_additions": 80,
+            "total_deletions": 0,
+            "accepted_lines": 80,
+            "overriden_lines": 0
+          },
+          "src/helpdesk/db.py": {
+            "total_additions": 26,
+            "total_deletions": 0,
+            "accepted_lines": 26,
+            "overriden_lines": 0
+          },
+          "src/helpdesk/guardrails/input_guard.py": {
+            "total_additions": 94,
+            "total_deletions": 3,
+            "accepted_lines": 91,
+            "overriden_lines": 0
+          },
+          "src/helpdesk/guardrails/output_guard.py": {
+            "total_additions": 46,
+            "total_deletions": 0,
+            "accepted_lines": 46,
+            "overriden_lines": 0
+          },
+          "src/helpdesk/guardrails/pii.py": {
+            "total_additions": 33,
+            "total_deletions": 0,
+            "accepted_lines": 33,
+            "overriden_lines": 0
+          },
+          "src/helpdesk/ingest.py": {
+            "total_additions": 44,
+            "total_deletions": 0,
+            "accepted_lines": 44,
+            "overriden_lines": 0
+          },
+          "src/helpdesk/llm.py": {
+            "total_additions": 45,
+            "total_deletions": 3,
+            "accepted_lines": 42,
+            "overriden_lines": 0
+          },
+          "src/helpdesk/retriever.py": {
+            "total_additions": 58,
+            "total_deletions": 0,
+            "accepted_lines": 58,
+            "overriden_lines": 0
+          },
+          "tests/test_agent_smoke.py": {
+            "total_additions": 108,
+            "total_deletions": 0,
+            "accepted_lines": 108,
+            "overriden_lines": 0
+          },
+          "tests/test_input_guard.py": {
+            "total_additions": 49,
+            "total_deletions": 0,
+            "accepted_lines": 49,
+            "overriden_lines": 0
+          },
+          "tests/test_mcp_tools.py": {
+            "total_additions": 74,
+            "total_deletions": 0,
+            "accepted_lines": 74,
+            "overriden_lines": 0
+          },
+          "tests/test_output_guard.py": {
+            "total_additions": 37,
+            "total_deletions": 0,
+            "accepted_lines": 37,
+            "overriden_lines": 0
+          },
+          "tests/test_pii.py": {
+            "total_additions": 33,
+            "total_deletions": 0,
+            "accepted_lines": 33,
+            "overriden_lines": 0
+          }
+        }
+      }
+    }
+  },
+  "integrity": {"v":1,"commit":"b920126a9eefdf578fa02e6855f14640ae808198","tree":"25a57a1c2aeff6820892dfb5791207a2568c6459","files":{".env.example":"8e3ad0858114ffbb8cb49043b13e61005dd6b033",".gitignore":"56e403a3bf3f621da2a08a06db99cc08158dc80d","README.md":"cc8f1e61c9ea1728debf0b7fc3804874f5e3b4e6","config/tenant.yaml":"f92295335674e80bab6fa9d3a2dac6c755cf6bac","data/db/schema.sql":"91552ffb8955c287c4ee5a0cd2fda220805d1991","data/db/seed.sql":"73cd90f466291fd1d3bc18e333197449ce546c64","data/policies/device-policy.md":"f50b6a551d6f9e6370c0847b9fd85c5b0bebb2d6","data/policies/it-security-policy.md":"d4aba1ba40a78959159d8c59fb3dac6417396d06","data/policies/leave-policy.md":"fa9ae1661016dea02a8c1e331d130296d7339ed3","data/policies/reimbursement-policy.md":"d602d674daf86663ba937649f3ae92eb0a4b1fcc","data/policies/remote-work-policy.md":"5d48bf5992699eb4fc80853279ae02726ad81b2f","docker-compose.yml":"29658bfbbce2d15540fe4805a27539a6e023ed32","eval/questions.yaml":"af657250bd9041feef795ce71080ceb08bb2d04b","eval/results.md":"79c083c10b2d688f65b44b517c96c8d64b9fa642","mcp_server/server.py":"801068ccbc890a16ca17a9118502467194699c12","scripts/run_eval.py":"1043b489d6ee15990927c92b4372db2e73f0749d","scripts/seed_db.py":"3c8c72a94f9346248bca45d9ead2e6cd548785cd","src/helpdesk/__main__.py":"4e28416e104515e90fca4b69cc60d0c61fd15d61","src/helpdesk/agent.py":"58a6de0cfc7ea46df41977dfac28c4abfc8a6c00","src/helpdesk/api.py":"288abd1092e9870ffa7c6bb76ae50f3b8bb8e3a2","src/helpdesk/cli.py":"d8821205e8e3f6312501a92039ebed950cab6937","src/helpdesk/config.py":"4876f5c5de66e17fd845d8cd9ff7dade36730355","src/helpdesk/db.py":"2c07bfb0780ac4edce9917c4ce24ecf420af7d6c","src/helpdesk/guardrails/input_guard.py":"d848392c74dfd2aabff7fbe60fddb0d51d4e1a7b","src/helpdesk/guardrails/output_guard.py":"152694ac9fa980a24f639b52b180b874ec62f7c6","src/helpdesk/guardrails/pii.py":"12c882aacb57958b2dddd0e090ccb2b5224436c5","src/helpdesk/ingest.py":"b78d4d989f3499afd1f1db42c1e3f3cbe48aa9dc","src/helpdesk/llm.py":"f3657d7db271ef3c4dce433b339c35f00415f17b","src/helpdesk/retriever.py":"0b214ebffb74d7230d5881a93c5b04891a9f5b8a","tests/test_agent_smoke.py":"fd0a4a6916d43402142c45207960c9d00f2e3547","tests/test_input_guard.py":"46838414d9211872551d53f72b50d94037824649","tests/test_mcp_tools.py":"af82dd7f1fba4187ffb9b2040dd1eabb774b9172","tests/test_output_guard.py":"3ccdc1ceda586e746347266e1c583d55b3a41eb9","tests/test_pii.py":"42c8554870beb8516a7c9fa609a780b444cd3a09"},"digest":"129d9b125c85eff43c8b73eeb8b6b56fe0e0015169f5c12fe972ca4589935cc1"}
+}
