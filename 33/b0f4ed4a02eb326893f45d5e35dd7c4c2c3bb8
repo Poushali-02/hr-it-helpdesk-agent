@@ -1,0 +1,56 @@
+config/tenant.yaml
+  s_844bb8b964fcda::t_36d666827eaf0c 1-2,5-6
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "autter_version": "3.9.1",
+  "base_commit_sha": "33b0f4ed4a02eb326893f45d5e35dd7c4c2c3bb8",
+  "branch": "main",
+  "prompts": {
+    "s_844bb8b964fcda": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1b98acd4-c103-497a-9b5d-341516298da8",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "Poushali Bhattacharyya <poushalibhattacharyya02@gmail.com>",
+      "messages_url": "cas:188596c23c0dc83afafd48208510a42c1ee8f41a9f81029e8e658c982f8ef786",
+      "total_additions": 4,
+      "total_deletions": 4,
+      "accepted_lines": 4,
+      "overriden_lines": 0
+    }
+  },
+  "sessions": {
+    "s_844bb8b964fcda": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1b98acd4-c103-497a-9b5d-341516298da8",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "Poushali Bhattacharyya <poushalibhattacharyya02@gmail.com>",
+      "messages_url": "cas:188596c23c0dc83afafd48208510a42c1ee8f41a9f81029e8e658c982f8ef786",
+      "stats": {
+        "total_additions": 4,
+        "total_deletions": 4,
+        "accepted_lines": 4,
+        "overriden_lines": 0,
+        "files": {
+          ".markdown-collab/.mcp-server.json": {
+            "total_additions": 0,
+            "total_deletions": 0,
+            "accepted_lines": 0,
+            "overriden_lines": 0
+          },
+          "config/tenant.yaml": {
+            "total_additions": 4,
+            "total_deletions": 4,
+            "accepted_lines": 4,
+            "overriden_lines": 0
+          }
+        }
+      }
+    }
+  },
+  "integrity": {"v":1,"commit":"33b0f4ed4a02eb326893f45d5e35dd7c4c2c3bb8","tree":"820ff03e47ebc913297281303f9c67676540c92c","files":{"config/tenant.yaml":"fee47e1150cddcbb736cf2992b3b2afef511b472"},"digest":"087ae6ef671a186c7edc0f1daf36eb1c8ed96f16f33d4272369ef319306d1376"}
+}
