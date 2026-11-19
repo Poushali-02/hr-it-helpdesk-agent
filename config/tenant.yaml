@@ -1,0 +1,10 @@
+company_name: acme Labs
+assistant_name: ava
+tone: friendly, concise, professional
+contacts:
+  hr: hr@acme.example
+  it: it-helpdesk@acme.example
+in_scope: [leave, payroll basics, benefits, onboarding, devices, accounts, security, VPN, reimbursements, remote work]
+refusal_message: "I can only help with HR and IT questions at {company_name}."
+not_found_message: "I couldn't find this in our policies. Please contact {hr_contact} (HR) or {it_contact} (IT)."
+hr_admin_id: E001
